@@ -1,0 +1,77 @@
+a{
+    text-decoration: none;
+    text-underline: none;
+}
+
+header{
+    width: auto;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+main, section, article, aside, .footer-wrapper, .navbar{
+    width: auto;
+    height: fit-content;
+    margin: 2rem 5rem 0 5rem;
+}
+
+ul{
+    list-style-type: square
+}
+
+.navbar{
+    margin-top: 1rem;
+}
+
+.on-color:nth-child(even){
+    background-color: rgba(159, 159, 159, 0.14);
+}
+
+.on-color:nth-child(odd){
+    background-color: rgba(110, 160, 252, 0.22);
+}
+
+.main-forms{
+    display: flex;
+    flex-direction: column;
+    max-width: 15rem;
+    border-radius: 3px;
+    padding: 1rem;
+    margin: 0 auto 0 0;
+    border: solid 2px #000;
+    box-shadow: -3px -3px #b3b3b3;
+    background: linear-gradient(to right, #0d6efd, #fff);
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    background: #ffffff;
+}
+
+.main-forms>input{
+    margin: 0.25rem 0;
+}
+
+.main-forms>button{
+    margin: 1rem 0;
+}
+
+.forms-hide{
+    display: none;
+}
+
+.table-custom{
+    max-width: 42rem;
+}
+
+.article-image{
+    max-width: 26rem;
+    width: 100%;
+    height: auto;
+}
+
+aside a{
+    color: #de5a0e;
+}
