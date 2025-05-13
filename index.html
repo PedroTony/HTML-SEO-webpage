@@ -9,102 +9,116 @@
     <link rel="stylesheet" href="./style.css">
     <script src="./js/bootstrap.bundle.js"></script>
     <script src="./script.js"></script>
-    <title>Uses of HTML Semantics</title>
+    <title>SEO e semânticas HTML</title>
 </head>
 <body>
-<header class="on-color">
+<header id="header" class="on-color">
     <nav class="navbar">
         <ol class="breadcrumb">
             <li class="breadcrumb-item active">
                 Home
             </li>
             <li class="breadcrumb-item">
-                <a href="./about-us.html">About Us</a>
+                <a href="./sobre-nos.html">Sobre Nós</a>
             </li>
         </ol>
     </nav>
 </header>
 <main class="on-color">
-    <h1>
-        This is the home page!
-    </h1>
+    <h1 id="main-title"><b>&lt;main&gt;</b></h1>
+    <h3>
+        Bem-Vindo a página Home!
+    </h3>
     <p>
-        This project is about the uses of HTML Semantics. For example, this is wrapped in a <b>&lt;main&gt;</b> tag, and
-        the respective
-        will be styled differently according to their tags.
+        Este projeto abordará os usos da Semântica HTML. Por exemplo, esta div está encapsulado em uma tag
+        <b>&lt;main&gt;</b>, e as respectivas tags terão estilos diferentes de acordo com suas tags semânticas.
     </p>
     <p>
-        The main tag is used once in a page and mainly for the content that is the main focus of the page. Let's put a
-        simple form here as an example as if it's something important!
+        A tag main é somente utilizada uma vez uma única vez em cada página e principalmente para o conteúdo que é o
+        foco principal da página. Vamos colocar um formulário simples aqui como exemplo, como se fosse algo importante!
     </p>
     <form class="main-forms" method="GET">
         <label class="forms-hide" for="forms-username"></label>
-        <input id="forms-username" type="text" placeholder="Username">
+        <input id="forms-username" type="text" placeholder="Usuário">
         <label class="forms-hide" for="forms-password"></label>
-        <input id="forms-password" type="password" placeholder="Password">
+        <input id="forms-password" type="password" placeholder="Senha">
         <button id="forms-button" type="submit">Login</button>
     </form>
 </main>
-<section class="on-color">
-    <h2>
-        This is a <b>&lt;section&gt;</b>!
+<aside class="on-color">
+    <h2 id="aside-title">
+        <b>&lt;aside&gt;</b>
     </h2>
     <p>
-        Normally a section has relation with the content of the page, so let's place a table here instead.
+        Usado principalmente como uma barra lateral ou para se referir a links que tenham conexão com o conteúdo da
+        página ou também para localizar melhor os conteúdos de cada seção.
+    </p>
+    <p>
+        Exemplos:
+    </p>
+    <ul>
+        <li>
+            <a href="#header">&lt;header/nav&gt;</a>, <a href="#main-title">&lt;main&gt;</a>, <a href="#section-title">&lt;section&gt;</a>,
+            <a
+                    href="#article-title">&lt;article&gt;</a>, <a href="#aside-title">&lt;aside&gt;</a>, <a
+                href="#footer">&lt;footer&gt;</a>
+            (Note que se não estiver movendo, dê um zoom na sua página!);
+        </li>
+        <li>
+            Página <a href="sobre-nos.html">Sobre Nós</a>;
+        </li>
+        <li>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener">Link do Youtube</a>
+            que é muito útil mesmo.
+        </li>
+    </ul>
+</aside>
+<section class="on-color">
+    <h2 id="section-title">
+        <b>&lt;section&gt;</b>
+    </h2>
+    <p>
+        Normalmente, uma seção tem relação com o conteúdo da página, então vamos colocar uma tabela aqui como se tivesse
+        algum relacionamento importante com a &lt;main&gt;.
     </p>
     <table class="table table-striped table-bordered table-hover table-custom">
         <tr>
-            <th>You</th>
-            <th>ROCK!</th>
+            <th>Você é</th>
+            <th>BACANA</th>
         </tr>
         <tr>
-            <td>That's</td>
-            <td>True</td>
+            <td>É de fato</td>
+            <td>Verdade</td>
         </tr>
     </table>
 </section>
 <article class="on-color">
-    <h2>
-        This is an <b>&lt;article&gt;</b>!
+    <h2 id="article-title">
+        <b>&lt;article&gt;</b>
     </h2>
     <p>
-        Did you know that this is an article? It's content that has no connection with the rest of the page.
+        Você sabia que isto é um artigo? É um conteúdo sem conexão com o restante da página.
     </p>
     <p>
-        For example, look at this figure of a rubber duck (it's the only thing here generated with an <b>AI</b>).
+        Por exemplo, observe esta figura de um pato de borracha (é a única coisa aqui gerada com uma <b>IA</b>).
     </p>
     <figure>
-        <img class="article-image" src="./img/rubber-duck.svg" alt="Rubber duck floating on the water">
+        <img class="article-image" src="./img/rubber-duck.svg" alt="Pato de Borracha flutuando na Água">
         <figcaption>
-            <b>Figure 1</b> - Rubber duck floating on the water <i>(Generated with an AI)</i>.
+            <b>Figura 1</b> - Pato de borracha flutuando na água <i>(Imagem gerada por uma IA)</i>.
         </figcaption>
     </figure>
     <p>
-        Whenever using a figure, you can add a <b>&lt;figcaption&gt;</b> tag to describe the image and &lt;alt&gt; tag
-        as well.
+        Sempre que usar uma figura, você pode adicionar uma tag <b>&lt;figcaption&gt;</b> para descrever a imagem e uma
+        tag &lt;<b>alt</b>&gt; para descrever o que a imagem representa caso ela falhe ao carregar, e por motivos de
+        acessibilidade!
     </p>
 </article>
-<aside class="on-color">
-    <h2>
-        This is an <b>&lt;aside&gt;</b>!
-    </h2>
-    <p>
-        Mainly used as a sidebar or to refer to links that have connection with the content of the page.
-    </p>
-    <ul>
-        <li>
-            <a href="./about-us.html">About Us</a> page;
-        </li>
-        <li>
-            Useful <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener">youtube</a> link.
-        </li>
-    </ul>
-</aside>
-<footer class="on-color">
+<footer id="footer" class="on-color">
     <div class="footer-wrapper">
-        <h5>This is the <b>&lt;footer&gt;</b></h5>
+        <h5><b>&lt;footer&gt;</b></h5>
         <p>
-            It's simply the end of the HTML page.
+            O final da página HTML, normalmente se coloca os créditos, logo, redes sociais, etc.
         </p>
     </div>
 </footer>
